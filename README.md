@@ -1,5 +1,12 @@
 # bt-vue-datetimepicker
 
+
+A datetime picker component heavily inspired by https://github.com/pingcheng/bootstrap4-datetimepicker/tree/master/src.
+It depends on bootstrap-vue https://github.com/bootstrap-vue/bootstrap-vue
+and moment.js https://github.com/moment/moment/
+
+
+
 ## Project setup
 ```
 npm install
@@ -35,5 +42,3 @@ npm run test:e2e
 npm run test:unit
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
