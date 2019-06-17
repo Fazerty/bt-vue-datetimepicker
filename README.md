@@ -5,6 +5,14 @@ A datetime picker component heavily inspired by https://github.com/pingcheng/boo
 It depends on bootstrap-vue https://github.com/bootstrap-vue/bootstrap-vue
 and moment.js https://github.com/moment/moment/
 
+Requirement:
+
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/vue-fontawesome": "^0.1.5",
+    "@types/moment-timezone": "^0.5.12",
+    "bootstrap": "^4.3.1",
+
 
 
 ## Project setup
