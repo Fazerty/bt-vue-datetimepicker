@@ -1,13 +1,14 @@
 {
   "name": "bt-vue-datetimepicker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "license": "(MIT OR Apache-2.0)",
   "main": "dist/bt-vue-datetimepicker.umd.js",
+  "typings": "dist/dateTimePicker.d.ts",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name bt-vue-datetimepicker ./src/wrapper.js",
+    "build-bundle": "tsc && vue-cli-service build --target lib --name bt-vue-datetimepicker ./src/wrapper.ts",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"

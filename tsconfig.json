@@ -4,6 +4,8 @@
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
+    "declaration": true,                      /* Generates corresponding '.d.ts' file. */
+    "outDir": "./dist",
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
