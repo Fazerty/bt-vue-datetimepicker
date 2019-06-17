@@ -1,14 +1,14 @@
 // Import vue component
-import component from './components/DateTimePicker.vue';
+import DateTimePicker from './components/DateTimePicker.vue';
 // import BootstrapVue from 'bootstrap-vue';
 
-Vue.use(BootstrapVue);
+// Vue.use(BootstrapVue);
 
 // Declare install function executed by Vue.use()
 export function install(Vue) {
 	if (install.installed) return;
 	install.installed = true;
-	Vue.component('bt-vue-datetimepicker', component);
+	Vue.component('bt-vue-datetimepicker', DateTimePicker);
 }
 
 // Create module definition for Vue.use()
@@ -28,4 +28,4 @@ if (GlobalVue) {
 }
 
 // To allow use as module (npm/webpack/etc.) export component
-export default component;
+export default DateTimePicker;

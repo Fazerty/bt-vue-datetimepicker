@@ -1,8 +1,9 @@
 {
   "name": "bt-vue-datetimepicker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "license": "(MIT OR Apache-2.0)",
+  "main": "dist/bt-vue-datetimepicker.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
