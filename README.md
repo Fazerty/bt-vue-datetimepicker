@@ -7,7 +7,7 @@ A datetime picker component heavily inspired by\
 It depends on bootstrap-vue https://github.com/bootstrap-vue/bootstrap-vue
 and moment.js https://github.com/moment/moment/
 
-Test it at https://datetimepicker.upurion.com
+Test it at https://portofolio.upurion.com/datetimepicker
 
 Requirement:
 
