@@ -65,8 +65,8 @@ export default class DateTimePicker extends Vue {
    * @memberof DateTimePicker
    */
   @Prop()
-  private use24HoursProp: boolean | undefined;
-  private use24Hours!: boolean;
+  private use24Hours: boolean | undefined;
+  private use24HoursProp!: boolean;
 
   /**
    * Positioning of the date time picker, relative to the target input date field.
@@ -120,8 +120,8 @@ export default class DateTimePicker extends Vue {
    * @memberof DateTimePicker
    */
   @Prop()
-  private datePickerProp: boolean | undefined;
-  private datePicker!: boolean;
+  private datePicker: boolean | undefined;
+  private datePickerProp!: boolean;
 
   /**
    * Defines if the picker use the time picker
@@ -131,11 +131,11 @@ export default class DateTimePicker extends Vue {
    * @memberof DateTimePicker
    */
   @Prop()
-  private timePickerProp: boolean | undefined;
-  private timePicker!: boolean;
+  private timePicker: boolean | undefined;
+  private timePickerProp!: boolean;
 
   /**
-   * Use to change from datePicker to timePicker and inverse in the dialog
+   * Use to change from datePickerProp to timePickerProp and inverse in the dialog
    *
    * @private
    * @type {boolean}
@@ -235,23 +235,23 @@ export default class DateTimePicker extends Vue {
       '',
     );
 
-    if (typeof this.timePickerProp !== 'undefined') {
-      this.timePicker = this.timePickerProp;
+    if (typeof this.timePicker !== 'undefined') {
+      this.timePickerProp = this.timePicker;
     } else {
-      this.timePicker = formatTokensOnly.match(/LT|H|h|k|a|A|m|s|S|Z/g)
+      this.timePickerProp = formatTokensOnly.match(/LT|H|h|k|a|A|m|s|S|Z/g)
         ? true
         : false;
     }
 
-    if (typeof this.use24HoursProp !== 'undefined') {
-      this.use24Hours = this.use24HoursProp;
+    if (typeof this.use24Hours !== 'undefined') {
+      this.use24HoursProp = this.use24Hours;
     } else {
-      this.use24Hours = formatTokensOnly.match(/h|a|A/g) ? false : true;
+      this.use24HoursProp = formatTokensOnly.match(/h|a|A/g) ? false : true;
     }
-    if (typeof this.datePickerProp !== 'undefined') {
-      this.datePicker = this.datePickerProp;
+    if (typeof this.datePicker !== 'undefined') {
+      this.datePickerProp = this.datePicker;
     } else {
-      this.datePicker = formatTokensOnly.match(
+      this.datePickerProp = formatTokensOnly.match(
         /Y|Q|M|D|G|W|E|g|w|e|L[^T]*?/g,
       )
         ? true

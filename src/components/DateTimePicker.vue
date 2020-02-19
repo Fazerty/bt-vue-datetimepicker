@@ -22,12 +22,12 @@
       :show.sync="showDialog"
     >
       <b-container class="popoverContent" :data-target="id">
-        <b-row v-if="(showDatePicker || !timePicker) && datePicker">
+        <b-row v-if="(showDatePicker || !timePickerProp) && datePickerProp">
           <b-col>
             <DatePicker v-on:setDateTime="setDateTime" :date="workValue" :texts="texts"></DatePicker>
           </b-col>
         </b-row>
-        <b-row class="text-center" v-if="datePicker && showDatePicker && timePicker">
+        <b-row class="text-center" v-if="datePickerProp && showDatePicker && timePickerProp">
           <b-col>
             <b-button
               block
@@ -42,7 +42,7 @@
           </b-col>
         </b-row>
 
-        <b-row class="text-center" v-if="datePicker && timePicker && !showDatePicker">
+        <b-row class="text-center" v-if="datePickerProp && timePickerProp && !showDatePicker">
           <b-col class="popoverButton">
             <b-button
               block
@@ -56,7 +56,7 @@
             </b-button>
           </b-col>
         </b-row>
-        <b-row v-if="(!showDatePicker || !datePicker) && timePicker">
+        <b-row v-if="(!showDatePicker || !datePickerProp) && timePickerProp">
           <b-col>
             <TimePicker v-on:setDateTime="setDateTime" :time="workValue" :texts="texts" :use24Hours="use24Hours"></TimePicker>
           </b-col>

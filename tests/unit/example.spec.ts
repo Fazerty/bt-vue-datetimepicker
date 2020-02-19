@@ -20,7 +20,7 @@ localVue.use(BootstrapVue);
 
 
 describe('DateTimePicker.vue', () => {
-  it('text field contains date texte well formatted', () => {
+  it('text field contains date text well formatted', () => {
     const date: Moment = moment();
     const dateFormat: string = 'HH:mm DD-MM-YY';
     const dateText: string = date.format(dateFormat);
