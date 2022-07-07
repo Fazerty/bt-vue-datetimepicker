@@ -29,7 +29,7 @@
     "bootstrap-vue": "^2.1.0",
     "core-js": "^2.6.11",
     "eslint": "^6.8.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.27",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
